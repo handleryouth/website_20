@@ -146,7 +146,7 @@ p{
   text-align: center;
   display:flex;
   flex-direction: column;
-  margin-bottom:3rem;
+  margin-bottom:6rem;
 }
 
 .option1, .option2, .option3{
@@ -191,6 +191,15 @@ p{
 
 .choice-image{
   width:100%;
+}
+
+.choice-header{
+  margin-top:2.5rem;
+  margin-bottom: 0;
+}
+
+.choice-description{
+  margin-top: 1.5rem;
 }
 
 
