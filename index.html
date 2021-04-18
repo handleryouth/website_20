@@ -31,13 +31,39 @@
   Contact
   Login-->
 
+  <div class="popchoice notshowed">
+    <div class="popchoice-up">
+      <div class="popchoice-up-left">
+        <img src="images\logo-bookmark-popchoice.svg" alt="Our Logo">
+      </div>
+
+      <div class="popchoice-up-right">
+        <img class="close-icon" src="images/icon-close.svg" alt="Close Icon">
+      </div>
+    </div>
+
+    <div class="popchoice-down">
+      <a class="popchoice-link" href="#">FEATURES</a>
+      <a class="popchoice-link" href="#">PRICING</a>
+      <a class="popchoice-link" href="#">CONTANCT</a>
+    </div>
+
+    <button class="popchoice-button" type="button" name="button">LOGIN</button>
+
+    <div class="popchoice-social-icons">
+      <i class="fab fa-facebook-square fa-2x social-icon"></i>
+      <i class="fab fa-twitter fa-2x social-icon"></i>
+    </div>
+  </div>
+
+
   <nav class="navigation-class">
     <div class="left-navigation">
       <img src="images/logo-bookmark.svg" alt="Our Logo">
     </div>
 
     <div class="right-navigation">
-      <img src="images/icon-hamburger.svg" alt="hamburger Icon">
+      <img class="hamburger-icon" src="images/icon-hamburger.svg" alt="hamburger Icon">
     </div>
   </nav>
 
@@ -47,8 +73,8 @@
       <p>A clean and simple interface to organize your favourite websites. Open a new
         browser tab and see your sites load instantly. Try it for free.</p>
       <div class="first-page-button">
-        <button type="button" name="button">Get it on Chrome</button>
-        <button type="button" name="button">Get it on Firefox</button>
+        <button class="first-blue-button" type="button" name="button">Get it on Chrome</button>
+        <button class="first-white-button" type="button" name="button">Get it on Firefox</button>
       </div>
     </div>
 
@@ -66,17 +92,24 @@
   <div class="third-page-choice">
     <!--user choice-->
     <div class="third-page-option">
+
       <div class="option1">
         <span>Simple Bookmarking</span>
       </div>
+
+      <hr class="choice-line1 ">
 
       <div class="option2">
         <span>Speedy Searching</span>
       </div>
 
+      <hr class="choice-line2 notshowed">
+
       <div class="option3">
         <span>Easy Sharing</span>
       </div>
+
+      <hr class="choice-line3 notshowed">
 
     </div>
 
@@ -87,14 +120,14 @@
         gives you complete control over how you manage your favourite sites.</p>
     </div>
 
-    <div class="choice2">
+    <div class="choice2 notshowed">
       <img class="choice-image" src="images/illustration-features-tab-2.svg" alt="Illustration 2">
       <h3>Intelligent search</h3>
       <p>Our powerful search feature will help you find saved sites in no time at all.
         No need to trawl through all of your bookmarks.</p>
     </div>
 
-    <div class="choice3">
+    <div class="choice3 notshowed">
       <img class="choice-image" src="images/illustration-features-tab-3.svg" alt="Illustration 3">
       <h3>Share your bookmarks</h3>
       <p>Easily share your bookmarks and collections with others. Create a shareable
@@ -149,8 +182,8 @@
           <img class="arrow-icon up" src="images/icon-arrow.svg" alt="arrow">
         </div>
 
-        <div class="question1-answer">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+        <div class="question1-answer notshowed">
+          <p class="answer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
             justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
         </div>
 
@@ -162,8 +195,8 @@
           <img class="arrow-icon up" src="images/icon-arrow.svg" alt="arrow">
         </div>
 
-        <div class="question2-answer">
-          <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+        <div class="question2-answer notshowed">
+          <p class="answer-description">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
             Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
             ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
             Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
@@ -176,8 +209,8 @@
           <img class="arrow-icon up" src="images/icon-arrow.svg" alt="arrow">
         </div>
 
-        <div class="question3-answer">
-          <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+        <div class="question3-answer notshowed">
+          <p class="answer-description">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
             urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
             sollicitudin ex et ultricies bibendum.</p>
         </div>
@@ -189,8 +222,8 @@
           <img class="arrow-icon up" src="images/icon-arrow.svg" alt="arrow">
         </div>
 
-        <div class="question4-answer">
-          <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+        <div class="question4-answer notshowed">
+          <p class="answer-description">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
             vitae neque eget nisl gravida pellentesque non ut velit.</p>
         </div>
       </div>
@@ -234,6 +267,8 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+<script src="index.js" type="text/javascript"></script>
 </body>
 
 </html>
