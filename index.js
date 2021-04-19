@@ -46,6 +46,15 @@ const answer4 = document.querySelector(".question4-answer")
 /*answer question*/
 
 
+/*email checker*/
+const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+var email = document.querySelector(".footer-page1-input")
+const emailButton = document.querySelector(".footer-page1-button")
+const alertText = document.querySelector(".error-email")
+/*email checker*/
+
+
+
 
 /*navigation bar*/
 hamburger.addEventListener("click", function() {
@@ -168,3 +177,19 @@ fourth_question.addEventListener("click", function() {
     answer4.classList.add("notshowed")
   }
 })
+
+
+/*email checker*/
+
+emailButton.addEventListener("click", function(){
+  if(email.value.match(mailformat)){
+    alertText.classList.add("notshowed")
+    emailButton.classList.add("margin-for-emailButton")
+  }
+  else{
+    alertText.classList.remove("notshowed")
+    emailButton.classList.remove("margin-for-emailButton")
+  }
+})
+
+/*email checker*/
