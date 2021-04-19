@@ -40,12 +40,13 @@
       <div class="popchoice-up-right">
         <img class="close-icon" src="images/icon-close.svg" alt="Close Icon">
       </div>
+
     </div>
 
     <div class="popchoice-down">
       <a class="popchoice-link" href="#">FEATURES</a>
       <a class="popchoice-link" href="#">PRICING</a>
-      <a class="popchoice-link" href="#">CONTANCT</a>
+      <a class="popchoice-link" href="#">CONTACT</a>
     </div>
 
     <button class="popchoice-button" type="button" name="button">LOGIN</button>
@@ -64,6 +65,13 @@
 
     <div class="right-navigation">
       <img class="hamburger-icon" src="images/icon-hamburger.svg" alt="hamburger Icon">
+    </div>
+
+    <div class="additional-navigation">
+      <a class="additional-navigation-link" href="#">FEATURES</a>
+      <a class="additional-navigation-link" href="#">PRICING</a>
+      <a class="additional-navigation-link" href="#">CONTACT</a>
+      <button class="additional-navigation-button" type="button" name="button">LOGIN</button>
     </div>
   </nav>
 
@@ -113,25 +121,42 @@
 
     </div>
 
-    <div class="choice1">
-      <img class="choice-image" src="images/illustration-features-tab-1.svg" alt="Illustration 1">
-      <h3 class="choice-header">Bookmark in one click</h3>
-      <p class="choice-description">Organize your bookmarks however you like. Our simple drag-and-drop interface
-        gives you complete control over how you manage your favourite sites.</p>
+    <div class="choice1 flexing">
+      <div class="choice1-image">
+        <img class="choice-image" src="images/illustration-features-tab-1.svg" alt="Illustration 1">
+      </div>
+
+      <div class="choice1-description">
+        <h3 class="choice-header">Bookmark in one click</h3>
+        <p class="choice-description">Organize your bookmarks however you like. Our simple drag-and-drop interface
+          gives you complete control over how you manage your favourite sites.</p>
+      </div>
+
     </div>
 
     <div class="choice2 notshowed">
-      <img class="choice-image" src="images/illustration-features-tab-2.svg" alt="Illustration 2">
-      <h3 class="choice-header">Intelligent search</h3>
-      <p class="choice-description">Our powerful search feature will help you find saved sites in no time at all.
-        No need to trawl through all of your bookmarks.</p>
+      <div class="choice2-image">
+        <img class="choice-image" src="images/illustration-features-tab-2.svg" alt="Illustration 2">
+      </div>
+
+      <div class="choice2-description">
+        <h3 class="choice-header">Intelligent search</h3>
+        <p class="choice-description">Our powerful search feature will help you find saved sites in no time at all.
+          No need to trawl through all of your bookmarks.</p>
+      </div>
+
     </div>
 
     <div class="choice3 notshowed">
-      <img class="choice-image" src="images/illustration-features-tab-3.svg" alt="Illustration 3">
-      <h3 class="choice-header">Share your bookmarks</h3>
-      <p class="choice-description">Easily share your bookmarks and collections with others. Create a shareable
-        link that you can send at the click of a button.</p>
+      <div class="choice3-image">
+        <img class="choice-image" src="images/illustration-features-tab-3.svg" alt="Illustration 3">
+      </div>
+
+      <div class="choice3-description">
+        <h3 class="choice-header">Share your bookmarks</h3>
+        <p class="choice-description">Easily share your bookmarks and collections with others. Create a shareable
+          link that you can send at the click of a button.</p>
+      </div>
     </div>
 
   </div>
@@ -140,30 +165,32 @@
   <div class="fourth-page">
     <div class="fourt-page1">
       <h2>Download the extension</h2>
-      <p>We've got more browsers in the pipeline.
+      <p class="download-description">We've got more browsers in the pipeline.
         Please do let us know if you've got a
         favourite you'd like us to prioritize</p>
     </div>
 
-    <div class="chrome-mobile">
-      <img class="browser-img" src="images/logo-chrome.svg" alt="Google Chrome">
-      <h3>Add to Chrome</h3>
-      <span class="app-version">Minimum version 62</span>
-      <button class="browser-button" type="button" name="button">Add & Install Extension</button>
-    </div>
+    <div class="browser-version">
+      <div class="chrome-mobile">
+        <img class="browser-img" src="images/logo-chrome.svg" alt="Google Chrome">
+        <h3>Add to Chrome</h3>
+        <span class="app-version">Minimum version 62</span>
+        <button class="browser-button" type="button" name="button">Add & Install Extension</button>
+      </div>
 
-    <div class="firefox-mobile">
-      <img class="browser-img" src="images\logo-firefox.svg" alt="Firefox">
-      <h3>Add to Firefox</h3>
-      <span class="app-version">Minimum version 55</span>
-      <button class="browser-button" type="button" name="button">Add & Install Extension</button>
-    </div>
+      <div class="firefox-mobile">
+        <img class="browser-img" src="images\logo-firefox.svg" alt="Firefox">
+        <h3>Add to Firefox</h3>
+        <span class="app-version">Minimum version 55</span>
+        <button class="browser-button" type="button" name="button">Add & Install Extension</button>
+      </div>
 
-    <div class="opera-mobile">
-      <img class="browser-img" src="images\logo-opera.svg" alt="">
-      <h3>Add to Opera</h3>
-      <span class="app-version">Minimum version 46</span>
-      <button class="browser-button" type="button" name="button">Add & Install Extension</button>
+      <div class="opera-mobile">
+        <img class="browser-img" src="images\logo-opera.svg" alt="">
+        <h3>Add to Opera</h3>
+        <span class="app-version">Minimum version 46</span>
+        <button class="browser-button" type="button" name="button">Add & Install Extension</button>
+      </div>
     </div>
   </div>
 
@@ -171,7 +198,7 @@
   <div class="fifth-page">
     <div class="faqs">
       <h1>Frequently Asked Questions</h1>
-      <p>Here are some of our FAQs. If you have any other questions you’d like
+      <p class="faqs-description">Here are some of our FAQs. If you have any other questions you’d like
         answered please feel free to email us.</p>
     </div>
 
@@ -236,8 +263,10 @@
     <div class="footer-page1">
       <span class="footer-followers">35,000+ already joined</span>
       <h1 class="footer-page1-header">Stay up-to-date with what we’re doing</h1>
-      <input class="footer-page1-input" type="text" placeholder="Enter Your Email Address">
-      <button class="footer-page1-button" type="button" name="button">Contact Us</button>
+      <div class="footer-page1-input-button">
+        <input class="footer-page1-input" type="text" placeholder="Enter Your Email Address">
+        <button class="footer-page1-button" type="button" name="button">Contact Us</button>
+      </div>
     </div>
 
     <div class="footer-page2">

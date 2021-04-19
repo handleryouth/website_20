@@ -24,6 +24,11 @@ const line3 = document.querySelector(".choice-line3")
 
 
 /*arrow icon*/
+const first_question = document.querySelector(".question1")
+const second_question = document.querySelector(".question2")
+const third_question = document.querySelector(".question3")
+const fourth_question = document.querySelector(".question4")
+
 const arrow1 = document.querySelectorAll(".arrow-icon")[0]
 const arrow2 = document.querySelectorAll(".arrow-icon")[1]
 const arrow3 = document.querySelectorAll(".arrow-icon")[2]
@@ -60,8 +65,13 @@ close.addEventListener("click", function() {
 /*section change*/
 option1.addEventListener("click", function(){
   choice1.classList.remove("notshowed")
+  choice1.classList.add("flexing")
+
   choice2.classList.add("notshowed")
+  choice2.classList.remove("flexing")
+
   choice3.classList.add("notshowed")
+  choice3.classList.remove("flexing")
 
   line1.classList.remove("notshowed")
   line2.classList.add("notshowed")
@@ -70,8 +80,13 @@ option1.addEventListener("click", function(){
 
 option2.addEventListener("click", function(){
   choice2.classList.remove("notshowed")
+  choice2.classList.add("flexing")
+
   choice1.classList.add("notshowed")
+  choice1.classList.remove("flexing")
+
   choice3.classList.add("notshowed")
+  choice3.classList.remove("flexing")
 
   line2.classList.remove("notshowed")
   line1.classList.add("notshowed")
@@ -80,8 +95,13 @@ option2.addEventListener("click", function(){
 
 option3.addEventListener("click", function(){
   choice3.classList.remove("notshowed")
+  choice3.classList.add("flexing")
+
   choice1.classList.add("notshowed")
+  choice1.classList.remove("flexing")
+
   choice2.classList.add("notshowed")
+  choice2.classList.remove("flexing")
 
   line3.classList.remove("notshowed")
   line1.classList.add("notshowed")
@@ -91,53 +111,58 @@ option3.addEventListener("click", function(){
 
 
 
-
-
-
 /*arrow and question*/
 
-arrow1.addEventListener("click", function() {
+first_question.addEventListener("click", function() {
   if (arrow1.classList.contains("up")) {
+    arrow1.src="./images/icon-arrow-orange.svg";
     arrow1.classList.add("down")
     arrow1.classList.remove("up")
     answer1.classList.remove("notshowed")
   } else {
+    arrow1.src="./images/icon-arrow.svg";
     arrow1.classList.remove("down")
     arrow1.classList.add("up")
     answer1.classList.add("notshowed")
   }
 })
 
-arrow2.addEventListener("click", function() {
+second_question.addEventListener("click", function() {
   if (arrow2.classList.contains("up")) {
+    arrow2.src="./images/icon-arrow-orange.svg";
     arrow2.classList.add("down")
     arrow2.classList.remove("up")
     answer2.classList.remove("notshowed")
   } else {
+    arrow2.src="./images/icon-arrow.svg";
     arrow2.classList.remove("down")
     arrow2.classList.add("up")
     answer2.classList.add("notshowed")
   }
 })
 
-arrow3.addEventListener("click", function() {
+third_question.addEventListener("click", function() {
   if (arrow3.classList.contains("up")) {
+    arrow3.src="./images/icon-arrow-orange.svg";
     arrow3.classList.add("down")
     arrow3.classList.remove("up")
     answer3.classList.remove("notshowed")
   } else {
+    arrow3.src="./images/icon-arrow.svg";
     arrow3.classList.remove("down")
     arrow3.classList.add("up")
     answer3.classList.add("notshowed")
   }
 })
 
-arrow4.addEventListener("click", function() {
+fourth_question.addEventListener("click", function() {
   if (arrow4.classList.contains("up")) {
+    arrow4.src="./images/icon-arrow-orange.svg";
     arrow4.classList.add("down")
     arrow4.classList.remove("up")
     answer4.classList.remove("notshowed")
   } else {
+    arrow4.src="./images/icon-arrow.svg";
     arrow4.classList.remove("down")
     arrow4.classList.add("up")
     answer4.classList.add("notshowed")
