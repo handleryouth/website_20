@@ -51,6 +51,7 @@ const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0
 var email = document.querySelector(".footer-page1-input")
 const emailButton = document.querySelector(".footer-page1-button")
 const alertText = document.querySelector(".error-email")
+const alertIcon = document.querySelector(".error-icon")
 /*email checker*/
 
 
@@ -185,10 +186,12 @@ emailButton.addEventListener("click", function(){
   if(email.value.match(mailformat)){
     alertText.classList.add("notshowed")
     emailButton.classList.add("margin-for-emailButton")
+    alertIcon.classList.add("notshowed")
   }
   else{
     alertText.classList.remove("notshowed")
     emailButton.classList.remove("margin-for-emailButton")
+    alertIcon.classList.remove("notshowed")
   }
 })
 

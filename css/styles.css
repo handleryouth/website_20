@@ -358,10 +358,11 @@ p{
 .footer-page1-input{
   display:block;
   margin: 0 auto;
+  padding-right: 2rem;
   padding-left: 1rem;
   padding-top: 0.2rem;
-  max-width: 18rem;
-  width:85%;
+  max-width: 16rem;
+  width:75%;
   height: 2.3rem;
   position: relative;
   z-index: 2;
@@ -400,7 +401,7 @@ p{
   position: relative;
   bottom: 2rem;
   z-index: 2;
-  left: 9.6rem;
+  left: 7rem;
 }
 
 
@@ -444,6 +445,24 @@ p{
 
 .social-icon:hover{
   color: hsl(0, 94%, 66%);
+}
+
+@media (min-width:295px) {
+  .error-icon{
+    left: 7.5rem;
+  }
+}
+
+@media (min-width:313px){
+  .error-icon{
+    left: 8rem;
+  }
+}
+
+@media (min-width:336px){
+  .error-icon{
+    left: 8.5rem;
+  }
 }
 
 
@@ -595,7 +614,6 @@ p{
 .flexing{
   display: flex;
 }
-
 
 
 .choice-description{
